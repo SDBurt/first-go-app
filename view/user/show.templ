@@ -1,0 +1,13 @@
+package user
+
+import (
+	"first-go/view/layout"
+
+	"first-go/model"
+)
+
+templ Show(user model.User) {
+	@layout.Base() {
+		<h1>hello { user.Email } from the user page</h1>
+	}
+}
