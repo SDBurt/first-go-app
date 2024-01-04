@@ -3,7 +3,7 @@ module first-go
 go 1.21.5
 
 require (
-	github.com/a-h/templ v0.2.501
+	github.com/a-h/templ v0.2.513
 	github.com/labstack/echo/v4 v4.11.4
 )
 
