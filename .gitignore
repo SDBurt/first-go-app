@@ -1,5 +1,25 @@
-# Created by https://www.toptal.com/developers/gitignore/api/vim,linux,osx,macos,windows,go,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=vim,linux,osx,macos,windows,go,node
+# Created by https://www.toptal.com/developers/gitignore/api/vim,windows,osx,linux,visualstudiocode,go,cmake,dotenv,node
+# Edit at https://www.toptal.com/developers/gitignore?templates=vim,windows,osx,linux,visualstudiocode,go,cmake,dotenv,node
+
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+### CMake Patch ###
+# External projects
+*-prefix/
+
+### dotenv ###
+.env
 
 ### Go ###
 # If you prefer the allow list template instead of the deny list, see community template:
@@ -38,39 +58,6 @@ go.work
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
-
-### macOS ###
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-### macOS Patch ###
-# iCloud generated files
-*.icloud
 
 ### Node ###
 # Logs
@@ -148,7 +135,6 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
 .env.development.local
 .env.test.local
 .env.production.local
@@ -214,14 +200,32 @@ dist
 
 ### OSX ###
 # General
+.DS_Store
+.AppleDouble
+.LSOverride
 
 # Icon must end with two \r
+Icon
+
 
 # Thumbnails
+._*
 
 # Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
 # Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 ### Vim ###
 # Swap
@@ -242,6 +246,25 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -269,4 +292,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/vim,linux,osx,macos,windows,go,node
+# End of https://www.toptal.com/developers/gitignore/api/vim,windows,osx,linux,visualstudiocode,go,cmake,dotenv,node
+
+tmp

@@ -1,9 +1,13 @@
+// view/layout/base.templ
+
 package layout
 
 templ Base() {
 	<html>
-		<head></head>
-		<body>
+		<head>
+			<link rel="preload" href="/static/css/tailwind.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+		</head>
+		<body class="container">
 			This is from the base layout
 			{ children... }
 		</body>
