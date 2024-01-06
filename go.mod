@@ -1,6 +1,6 @@
 module first-go
 
-go 1.21.5
+go 1.21.4
 
 require (
 	github.com/a-h/templ v0.2.513
@@ -31,6 +31,6 @@ require (
 	golang.org/x/crypto v0.17.0 // indirect
 	golang.org/x/mod v0.14.0 // indirect
 	golang.org/x/net v0.19.0 // indirect
-	golang.org/x/sys v0.15.0 // indirect
+	golang.org/x/sys v0.16.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 )
